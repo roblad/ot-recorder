@@ -44,4 +44,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 ENTRYPOINT ["/entrypoint.sh"]
 #docker build --no-cache=true --compress=true -t robowntracks/owntracks-alpine:amd64 .
-#docker run -ti  --name=ot-recorder -p 8084:8083 -p 1884:1883 -v /ot-recorder/htdocs:/usr/share/ot-recorder/htdocs -v /ot-recorder/store:/var/lib/ot-recorder/store robowntracks/owntracks-alpine:amd64 
+#docker run -ti  --name=ot-recorder -p 8083:8083 -p 1883:1883 robowntracks/owntracks-alpine:amd64 # for rpi tag is armhf
