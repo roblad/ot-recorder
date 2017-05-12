@@ -1,7 +1,4 @@
-# GIT REPO
-
-https://github.com/roblad/ot-recorder
-
+# ot-recorder created based on linux alpine, inside mqtt server and ssh access - maping shared dirs
 
 
 # BUILD
