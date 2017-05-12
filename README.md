@@ -9,7 +9,7 @@ docker build --no-cache=true --compress=true -t robowntracks/owntracks-alpine:am
 USE TAG for RPI - :armhf
 docker run -ti  --name=ot-recorder -p 8083:8083 -p 1883:1883 robowntracks/owntracks-alpine:amd64 
 for background add option -d
-# sharinh with docker host 
+# sharing with docker host 
 add option
 
 -v /ot-recorder/htdocs:/usr/share/ot-recorder/htdocs -v /ot-recorder/store:/var/lib/ot-recorder/store 
