@@ -1,17 +1,21 @@
-BUILD
+# GIT REPO
 
+https://github.com/roblad/ot-recorder
+
+
+
+# BUILD
 USE TAG for RPI - :armhf
 docker build --no-cache=true --compress=true -t robowntracks/owntracks-alpine:amd64 .
-Container create and run
 
+# Container create and run 
 USE TAG for RPI - :armhf
-docker run -ti --name=ot-recorder -p 8083:8083 -p 1883:1883 robowntracks/owntracks-alpine:amd64
+docker run -ti  --name=ot-recorder -p 8083:8083 -p 1883:1883 robowntracks/owntracks-alpine:amd64 
 for background add option -d
-sharinh with docker host
-
+# sharinh with docker host 
 add option
 
--v /ot-recorder/htdocs:/usr/share/ot-recorder/htdocs -v /ot-recorder/store:/var/lib/ot-recorder/store
+-v /ot-recorder/htdocs:/usr/share/ot-recorder/htdocs -v /ot-recorder/store:/var/lib/ot-recorder/store 
 
 where dir before : is host created dir and after : there is directory inside docker
 
@@ -21,8 +25,3 @@ docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 
 https://docs.docker.com/engine/reference/commandline/cp/
-Start Stop container
-
-docker ot-recorder start
-
-docker ot-recorder stop
